@@ -8,7 +8,7 @@ document.getElementById("login-btn").addEventListener("click",
        const parsePin=parseInt(pin);
        if(accountNumber.length==11){
               if(parsePin===1234){
-                     window.location.href="./main.html"
+                     window.location.href="./main.html";
               }
               else{
                      alert("Pin Unvalid")

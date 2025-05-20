@@ -16,7 +16,7 @@
                      <nav class="flex justify-around items-center mb-3">
                             <img class="w-16 p-0" src="./assets/Group.png" alt="">
                             <div class="pl-2">
-                                   <h3 class="text-3xl text-center mb-1  font-bold">$45000</h3>
+                                   <h3 class="text-3xl text-center mb-1  font-bold">$<span id="main-balance">45000</span></h3>
                                    <p class=" p-1 rounded  ">Available Balance</p>
                             </div>
                             <button class="btn">Log-Out</button>
@@ -33,28 +33,28 @@
                             <!-- cards grid grid-cols-3 mt-14 gap-2 p-2 -->
                             <div class="cards grid grid-cols-3 mt-4 gap-2 ">
                                    <div class="box border p-4 text-center rounded-sm cursor-pointer">
-                                          <img class="w-8 mx-auto" src="./assets/money1.png" alt="">
+                                          <img class="w-8 mx-auto" src="./assets/wallet1.png" alt="">
                                           <p>Add Money</p>
                                    </div>
                                    <div class="box border p-4 text-center rounded-sm cursor-pointer">
-                                          <img class="w-8 mx-auto" src="./assets/money1.png" alt="">
-                                          <p>Add Money</p>
+                                          <img class="w-8 mx-auto" src="./assets/purse1.png" alt="">
+                                          <p>Cash Out</p>
                                    </div>
                                    <div class="box border p-4 text-center rounded-sm cursor-pointer">
                                           <img class="w-8 mx-auto" src="./assets/money1.png" alt="">
-                                          <p>Add Money</p>
+                                          <p>Pay Bill</p>
                                    </div>
                                    <div class="box border p-4 text-center rounded-sm cursor-pointer">
-                                          <img class="w-8 mx-auto" src="./assets/money1.png" alt="">
-                                          <p>Add Money</p>
+                                          <img class="w-8 mx-auto" src="./assets/send1.png" alt="">
+                                          <p>Transfer Money</p>
                                    </div>
                                    <div class="box border p-4 text-center rounded-sm cursor-pointer">
-                                          <img class="w-8 mx-auto" src="./assets/money1.png" alt="">
-                                          <p>Add Money</p>
+                                          <img class="w-8 mx-auto" src="./assets/bonus1.png" alt="">
+                                          <p>Get Bonus</p>
                                    </div>
                                    <div class="box border p-4 text-center rounded-sm cursor-pointer">
-                                          <img class="w-8 mx-auto" src="./assets/money1.png" alt="">
-                                          <p>Add Money</p>
+                                          <img class="w-8 mx-auto" src="./assets/transaction1.png" alt="">
+                                          <p>Transaction History</p>
                                    </div>
                             </div>
                      </section>
@@ -84,10 +84,10 @@
                                                  <label class="fieldset-label">Account Number</label>
                                                  <input class="input rounded-2xl" type="password" class="input" placeholder="Enter Account Number" />
                                                  <label class="fieldset-label">Amout to Add</label>
-                                                 <input class="input rounded-2xl" type="password" class="input" placeholder="Enter Amount" />
+                                                 <input class="input rounded-2xl" type="text" class="input" placeholder="Enter Amount" id="amount"/>
                                                  <label class="fieldset-label">PIN</label>
                                                  <input class="input rounded-2xl" type="password" class="input" placeholder="Enter PIN Number" />
-                                                 <button class="btn btn-neutral mt-4">Login</button>
+                                                 <button class="btn btn-primary mt-4" id="add-money">Add Money </button>
                                                  <div class="mx-auto mt-2"><a class="link link-hover" class="">Forgot password?</a></div>
                                           </fieldset>
                                    </div>
@@ -96,6 +96,8 @@
                      </div>
               </section>
        </section>
+
+       <script src="./script/add.js"></script>
 </body>
 
 </html>
